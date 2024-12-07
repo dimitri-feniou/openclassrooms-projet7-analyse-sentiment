@@ -1,0 +1,16 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/9f1d813751b7498dbaaab8d89eebfce3/artifacts
+deleted_time: 1733514358551
+end_time: 1733511358129
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: deleted
+run_id: 9f1d813751b7498dbaaab8d89eebfce3
+run_name: KMeans_TF-IDF
+run_uuid: 9f1d813751b7498dbaaab8d89eebfce3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733511355942
+status: 3
+tags: []
+user_id: dimitri

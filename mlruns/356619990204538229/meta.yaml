@@ -1,0 +1,6 @@
+artifact_location: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/356619990204538229
+creation_time: 1733595604181
+experiment_id: '356619990204538229'
+last_update_time: 1733595604181
+lifecycle_stage: active
+name: Sentiment Analysis with LightGBM and TF-IDF

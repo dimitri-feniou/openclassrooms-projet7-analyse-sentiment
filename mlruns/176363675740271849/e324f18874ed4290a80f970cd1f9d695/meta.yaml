@@ -1,0 +1,16 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/e324f18874ed4290a80f970cd1f9d695/artifacts
+deleted_time: 1733514358551
+end_time: 1733508540058
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: deleted
+run_id: e324f18874ed4290a80f970cd1f9d695
+run_name: RandomForestClassifier_TFIDF_5000_(1, 1)
+run_uuid: e324f18874ed4290a80f970cd1f9d695
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733508525416
+status: 4
+tags: []
+user_id: dimitri

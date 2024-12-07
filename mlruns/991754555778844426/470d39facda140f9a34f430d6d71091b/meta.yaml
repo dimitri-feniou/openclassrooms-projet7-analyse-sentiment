@@ -1,0 +1,15 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/991754555778844426/470d39facda140f9a34f430d6d71091b/artifacts
+end_time: 1733448050254
+entry_point_name: ''
+experiment_id: '991754555778844426'
+lifecycle_stage: active
+run_id: 470d39facda140f9a34f430d6d71091b
+run_name: GridSearch_DistilBERT_PCA_50
+run_uuid: 470d39facda140f9a34f430d6d71091b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733447402532
+status: 3
+tags: []
+user_id: dimitri

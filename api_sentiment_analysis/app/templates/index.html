@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+    <div class="flex justify-center items-center min-h-screen">
+        <!-- Large Card -->
+        <div
+            class="max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+            <!-- Header -->
+            <div class="bg-blue-600 p-8">
+                <h2 class="text-4xl font-bold text-white">Analyse de Sentiment</h2>
+                <p class="text-blue-200 mt-4 text-lg">Utilisez DistilBERT pour analyser rapidement et efficacement le
+                    sentiment d'un texte. Entrez un texte ci-dessous pour commencer.</p>
+            </div>
+
+            <!-- Body -->
+            <div class="p-8">
+                <!-- Form -->
+                <form action="/" method="POST">
+                    {% if error %}
+                    <p class="text-red-500 text-sm mb-4">{{ error }}</p>
+                    {% endif %}
+                    <textarea name="text" rows="6" placeholder="Enter your text"
+                        class="w-full p-4 border border-gray-300 rounded-lg mb-6 focus:ring-2 focus:ring-blue-500 text-lg">
+                        {{ text if text else '' }}
+                    </textarea>
+
+                    <div class="flex space-x-4">
+                        <!-- Analyze Button -->
+                        <button type="submit"
+                            class="flex-1 bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition text-lg">
+                            Analyze
+                        </button>
+                        <!-- Rewrite Button -->
+                        <button type="button"
+                            class="flex-1 bg-gray-200 text-gray-700 py-3 px-6 rounded-lg hover:bg-gray-300 transition text-lg"
+                            onclick="document.querySelector('textarea[name=text]').value=''">
+                            Réecrire un texte
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Sentiment Result -->
+                {% if sentiment %}
+                <div class="mt-8">
+                    <!-- Sentiment Text -->
+                    <p class="text-xl font-medium mb-4">
+                        <strong>Texte analysé :</strong> {{ text }}
+                    </p>
+                    <p class="text-xl font-medium mb-6">
+                        <strong>Sentiment :</strong>
+                        <span class="{{ 'text-green-500' if sentiment == 'positif' else 'text-red-500' }}">
+                            {{ sentiment }}
+                        </span>
+                    </p>
+
+                    <!-- Feedback Buttons -->
+                    <p class="text-lg font-medium mb-4">Donnez votre avis sur la recommandation :</p>
+                    <div class="flex space-x-4">
+                        <!-- Like Button -->
+                        <form action="/feedback" method="POST">
+                            <input type="hidden" name="feedback" value="like">
+                            <input type="hidden" name="text" value="{{ text }}">
+                            <button type="submit"
+                                class="flex-1 bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition text-lg">
+                                👍 Like
+                            </button>
+                        </form>
+                        <!-- Dislike Button -->
+                        <form action="/feedback" method="POST">
+                            <input type="hidden" name="feedback" value="dislike">
+                            <input type="hidden" name="text" value="{{ text }}">
+                            <button type="submit"
+                                class="flex-1 bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 transition text-lg">
+                                👎 Dislike
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/159096feaf6a44db8ee99f55e14a4148/artifacts
+end_time: 1733259899608
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: active
+run_id: 159096feaf6a44db8ee99f55e14a4148
+run_name: LogisticRegression_distilbert
+run_uuid: 159096feaf6a44db8ee99f55e14a4148
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733259894510
+status: 3
+tags: []
+user_id: dimitri

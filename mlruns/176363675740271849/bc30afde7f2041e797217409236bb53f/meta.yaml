@@ -1,0 +1,15 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/bc30afde7f2041e797217409236bb53f/artifacts
+end_time: 1732974470606
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: active
+run_id: bc30afde7f2041e797217409236bb53f
+run_name: LogisticRegression_TFIDF_5000_(1, 1)
+run_uuid: bc30afde7f2041e797217409236bb53f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732974465676
+status: 3
+tags: []
+user_id: dimitri

@@ -1,0 +1,20 @@
+artifact_path: TF-IDF_LogisticRegression_100
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.18.0
+model_size_bytes: 40714
+model_uuid: 71bfab04f9ac49c6ad456e68c665734a
+run_id: 466bc3eec7864c8d90cbfe826d745047
+utc_time_created: '2024-12-06 01:05:09.670557'

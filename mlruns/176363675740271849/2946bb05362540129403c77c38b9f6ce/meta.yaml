@@ -1,0 +1,16 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/2946bb05362540129403c77c38b9f6ce/artifacts
+deleted_time: 1732974436302
+end_time: 1732971433085
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: deleted
+run_id: 2946bb05362540129403c77c38b9f6ce
+run_name: TFIDF with logistic regression
+run_uuid: 2946bb05362540129403c77c38b9f6ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732971427727
+status: 3
+tags: []
+user_id: dimitri
