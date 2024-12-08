@@ -1,3 +1,5 @@
 app/__pycache__
 api_sentiment_analysis/tests/.pytest_cache
 api_sentiment_analysis/tests/__pycache__
+!.gitignore
+!api_sentiment_analysis/
