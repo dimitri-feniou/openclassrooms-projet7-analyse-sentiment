@@ -3,9 +3,11 @@ name: Test API
 on:
   push:
     branches:
+      - main
       - api-sentiment
   pull_request:
     branches:
+      - main
       - api-sentiment
 jobs:
   test:
