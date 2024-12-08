@@ -28,4 +28,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest api_sentiment_analysis/test/ --maxfail=5 --disable-warnings
+          pytest api_sentiment_analysis/tests/ --maxfail=5 --disable-warnings
