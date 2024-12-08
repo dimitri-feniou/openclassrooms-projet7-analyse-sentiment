@@ -35,11 +35,6 @@ def home():
 
     print("Flask App Template Folder:", template_folder)
 
-    # Check if template folder exists before listing
-    if os.path.exists(template_folder):
-        print("Template Files:", os.listdir(template_folder))
-    else:
-        print(f"Template directory does not exist: {template_folder}")
     text = ""
     sentiment = None
     error = None
@@ -71,5 +66,4 @@ def feedback():
     feedback = request.form.get("feedback")  # 'like' or 'dislike'
     text = request.form.get("text")  # The analyzed text
     print(f"Feedback received: {feedback} for text: {text}")
-    # Enregistrez le feedback dans une base de données ou un fichier
     return redirect("/")
