@@ -1,4 +1,12 @@
-from flask import Blueprint, request, jsonify, render_template, current_app, url_for,redirect
+from flask import (
+    Blueprint,
+    request,
+    jsonify,
+    render_template,
+    current_app,
+    url_for,
+    redirect,
+)
 from app.models import load_model
 from app.utils import predict_sentiment
 import os
@@ -32,6 +40,9 @@ def home():
         print("Template Files:", os.listdir(template_folder))
     else:
         print(f"Template directory does not exist: {template_folder}")
+    text = ""
+    sentiment = None
+    error = None
     if request.method == "POST":
         text = request.form.get("text")
         if not text:
