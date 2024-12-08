@@ -1,0 +1,15 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/c5cc8aa98f0c48d0954f582faab40758/artifacts
+end_time: 1733511395549
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: active
+run_id: c5cc8aa98f0c48d0954f582faab40758
+run_name: KMeans_Word2Vec
+run_uuid: c5cc8aa98f0c48d0954f582faab40758
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733511393664
+status: 3
+tags: []
+user_id: dimitri

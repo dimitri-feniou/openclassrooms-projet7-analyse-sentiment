@@ -1,0 +1,16 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/258a703f3c33432997a04661ac76189d/artifacts
+deleted_time: 1732974436302
+end_time: 1732971498838
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: deleted
+run_id: 258a703f3c33432997a04661ac76189d
+run_name: TFIDF with Light GBM
+run_uuid: 258a703f3c33432997a04661ac76189d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732971476338
+status: 3
+tags: []
+user_id: dimitri

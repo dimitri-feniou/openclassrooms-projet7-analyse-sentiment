@@ -1,0 +1,15 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/176363675740271849/b992e55e6011407b888a6be29b0240fb/artifacts
+end_time: 1732981518424
+entry_point_name: ''
+experiment_id: '176363675740271849'
+lifecycle_stage: active
+run_id: b992e55e6011407b888a6be29b0240fb
+run_name: LogisticRegression_word2vec
+run_uuid: b992e55e6011407b888a6be29b0240fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732981509504
+status: 3
+tags: []
+user_id: dimitri

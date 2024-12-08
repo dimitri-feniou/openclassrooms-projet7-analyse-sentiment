@@ -1,0 +1,20 @@
+artifact_path: KMeans_TF-IDF_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.18.0
+model_size_bytes: 5199083
+model_uuid: 1adf452dab644158adc60e8ca7c1e60d
+run_id: e247827d13934c358741f4e9352e69bd
+utc_time_created: '2024-12-06 18:17:05.567440'

@@ -1,0 +1,16 @@
+artifact_uri: /home/dimitri/Documents/openclassrooms/projet_7/mlruns/991754555778844426/4640c9616b9348b98cce3953c5c57da8/artifacts
+deleted_time: 1733495593112
+end_time: 1733444623359
+entry_point_name: ''
+experiment_id: '991754555778844426'
+lifecycle_stage: deleted
+run_id: 4640c9616b9348b98cce3953c5c57da8
+run_name: GridSearch_TF-IDF_PCA_50
+run_uuid: 4640c9616b9348b98cce3953c5c57da8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733444605229
+status: 4
+tags: []
+user_id: dimitri
