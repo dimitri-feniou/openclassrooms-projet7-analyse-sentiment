@@ -1,9 +1,0 @@
-dataset
-.pytest_cache
-__pycache__
-api_sentiment_analysis/.pytest_cache
-models
-.vscode
-resume_projet.md
-api_sentiment_analysis/.pytest_cache
-api_sentiment_analysis/app/__pycache__
