@@ -18,3 +18,4 @@ api_sentiment_analysis/
 
 # Env azure déploiement api 
 antenv
+# Trigger GitHub Actions
