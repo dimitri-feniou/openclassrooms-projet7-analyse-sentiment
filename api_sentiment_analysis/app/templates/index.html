@@ -68,6 +68,7 @@
                         <form action="/feedback" method="POST">
                             <input type="hidden" name="feedback" value="like">
                             <input type="hidden" name="text" value="{{ text }}">
+                            <input type="hidden" name="predicted_sentiment" value="{{ predicted_sentiment }}">
                             <button type="submit"
                                 class="flex-1 bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition text-lg">
                                 👍 Like
@@ -77,6 +78,7 @@
                         <form action="/feedback" method="POST">
                             <input type="hidden" name="feedback" value="dislike">
                             <input type="hidden" name="text" value="{{ text }}">
+                            <input type="hidden" name="predicted_sentiment" value="{{ predicted_sentiment }}">
                             <button type="submit"
                                 class="flex-1 bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 transition text-lg">
                                 👎 Dislike

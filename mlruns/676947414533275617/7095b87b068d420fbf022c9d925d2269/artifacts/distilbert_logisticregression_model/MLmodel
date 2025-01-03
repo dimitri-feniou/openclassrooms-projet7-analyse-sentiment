@@ -1,0 +1,20 @@
+artifact_path: distilbert_logisticregression_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.16
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 1507
+model_uuid: 3544b365cd164f5784d064389c64ac46
+run_id: 7095b87b068d420fbf022c9d925d2269
+utc_time_created: '2024-12-30 15:56:26.388637'

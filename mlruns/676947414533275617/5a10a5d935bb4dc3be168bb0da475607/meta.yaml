@@ -1,0 +1,15 @@
+artifact_uri: file:///home/semoulolait/Documents/openclassrooms/projet_7/mlruns/mlruns/676947414533275617/5a10a5d935bb4dc3be168bb0da475607/artifacts
+end_time: 1735320418401
+entry_point_name: ''
+experiment_id: '676947414533275617'
+lifecycle_stage: active
+run_id: 5a10a5d935bb4dc3be168bb0da475607
+run_name: TFIDF_LightGBM
+run_uuid: 5a10a5d935bb4dc3be168bb0da475607
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735320394662
+status: 3
+tags: []
+user_id: semoulolait

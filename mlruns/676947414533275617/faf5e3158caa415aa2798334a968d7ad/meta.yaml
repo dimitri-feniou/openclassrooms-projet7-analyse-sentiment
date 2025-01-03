@@ -1,0 +1,15 @@
+artifact_uri: file:///home/semoulolait/Documents/openclassrooms/projet_7/mlruns/mlruns/676947414533275617/faf5e3158caa415aa2798334a968d7ad/artifacts
+end_time: 1735339072558
+entry_point_name: ''
+experiment_id: '676947414533275617'
+lifecycle_stage: active
+run_id: faf5e3158caa415aa2798334a968d7ad
+run_name: GloVe_LogisticRegression
+run_uuid: faf5e3158caa415aa2798334a968d7ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735339065088
+status: 3
+tags: []
+user_id: semoulolait

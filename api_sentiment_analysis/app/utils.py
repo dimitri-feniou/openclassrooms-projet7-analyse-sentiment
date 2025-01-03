@@ -1,8 +1,8 @@
-import torch
 import numpy as np
+import tensorflow as tf
 
 
-def predict_sentiment(text, tokenizer, model, mlflow_model, pca_model,max_len=128):
+def predict_sentiment(text, tokenizer, model, mlflow_model, pca_model, max_len=128):
     """
     Compute DistilBERT embedding for a single text, reduce dimensions using PCA, and predict sentiment.
 
@@ -16,23 +16,25 @@ def predict_sentiment(text, tokenizer, model, mlflow_model, pca_model,max_len=12
     Returns:
         int: Predicted sentiment label.
     """
-    if len(text) > max_len * 10:  # Limitez selon vos besoins
-        raise ValueError("Text is too long for processing")
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    model.eval()
+    # Tokenize and prepare inputs
+    inputs = tokenizer(
+        text,
+        truncation=True,
+        padding="max_length",
+        max_length=max_len,
+        return_tensors="tf",
+    )
 
-    # Tokenize the text and compute the embedding
-    with torch.no_grad():
-        encoded_input = tokenizer(
-            text,
-            padding="max_length",
-            truncation=True,
-            max_length=max_len,
-            return_tensors="pt",
-        ).to(device)
-        output = model(**encoded_input)
-        embedding = output.last_hidden_state.mean(dim=1).detach().cpu().numpy()
+    # Validation des dimensions
+    input_ids_shape = inputs["input_ids"].shape
+    if input_ids_shape[-1] > max_len:
+        raise ValueError("Input text is too long")
 
+    # Pass inputs through the model
+    output = model(inputs)
+    embedding = tf.reduce_mean(output.last_hidden_state, axis=1).numpy()
+
+    # Reduce dimensions using PCA
     reduced_embedding = pca_model.transform(embedding)
 
     # Predict sentiment using the MLflow model

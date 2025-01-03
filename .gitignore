@@ -4,4 +4,6 @@ __pycache__
 models
 .vscode
 resume_projet.md
+.gitignore
+note_blog_mlops.docx
 
