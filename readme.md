@@ -22,7 +22,7 @@
 
 <!-- LINKS_PLACEHOLDER -->
 
-<p align="center"><img src="https://raw.githubusercontent.com/dimitri-feniou/openclassrooms-projet7-analyse-sentiment/refs/heads/master/screenshot_projet/app_azure.jpg" alt="Main Image"/></p>
+<p align="center"><img src="[https://raw.githubusercontent.com/dimitri-feniou/openclassrooms-projet7-analyse-sentiment/refs/heads/master/screenshot_projet/app_azure.jpg](https://raw.githubusercontent.com/dimitri-feniou/openclassrooms-projet7-analyse-sentiment/refs/heads/master/presentation_projet_7/public/app_azure.jpg)" alt="Main Image"/></p>
 
 <!-- TABLE_CONTENT_PLACEHOLDER -->
 
